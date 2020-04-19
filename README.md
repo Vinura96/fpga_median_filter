@@ -1,0 +1,2 @@
+# fpga_median_filter
+Image Processing is a significant field of study. Impulsive noise in images is a main issue in this field. The median filter has been found as a more robust method to remove the impulsive noise from an image, than the traditional linear filtering, even though the computational cost is higher. So that it preserves the sharp edges of the image. We will be working on  a fpga-based implementation for median filter in this project.
