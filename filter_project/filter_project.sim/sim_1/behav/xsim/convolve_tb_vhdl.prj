@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../filter_project.srcs/sources_1/new/convolve.vhd" \
+"../../../../filter_project.srcs/sim_1/new/convolve_tb.vhd" \
+
+# Do not sort compile order
+nosort
