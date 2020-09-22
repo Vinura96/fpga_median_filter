@@ -1,0 +1,1 @@
+axi_uartlite_0.vhd,vhdl,xil_defaultlib,../../../../filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/sim/axi_uartlite_0.vhd,

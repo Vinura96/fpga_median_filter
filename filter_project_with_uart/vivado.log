@@ -1,0 +1,1263 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep 22 08:58:10 2020
+# Process ID: 21268
+# Current directory: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent44896 C:\Users\ASUS\Desktop\Sem\filter_project_with_uart\filter_project_with_uart.xpr
+# Log file: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 769.285 ; gain = 155.305
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 908.699 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A81BA
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/impl_1/median_filter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/impl_1/median_filter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+open_project C:/Users/ASUS/Desktop/Sem7/HDL/filter_project/filter_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+current_project filter_project_with_uart
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Sep 22 12:05:27 2020] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/synth_1/runme.log
+[Tue Sep 22 12:05:27 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2341.676 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A81BA
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/impl_1/median_filter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/impl_1/median_filter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2565.652 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 192 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2575.363 ; gain = 193.512
+INFO: [Common 17-344] 'open_run' was cancelled
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2575.363 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8D0A
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/impl_1/median_filter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/impl_1/median_filter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+file mkdir C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/mux_for_rams_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/mux_for_rams_tb.vhd
+update_compile_order -fileset sim_1
+set_property top mux_for_rams_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux_for_rams_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj mux_for_rams_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/mux_for_rams.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_for_rams'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/mux_for_rams_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_for_rams_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xelab -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mux_for_rams_tb_behav xil_defaultlib.mux_for_rams_tb -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot mux_for_rams_tb_behav xil_defaultlib.mux_for_rams_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mux_for_rams [mux_for_rams_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_for_rams_tb
+Built simulation snapshot mux_for_rams_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim/xsim.dir/mux_for_rams_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim/xsim.dir/mux_for_rams_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Sep 22 15:13:46 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 110.145 ; gain = 23.500
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 22 15:13:46 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2649.160 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mux_for_rams_tb_behav -key {Behavioral:sim_1:Functional:mux_for_rams_tb} -tclbatch {mux_for_rams_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source mux_for_rams_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning: Multiplexing Logic Error(pu enabled)
+Time: 20 ns  Iteration: 0  Process: /mux_for_rams_tb/stimuli  File: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/mux_for_rams_tb.vhd
+Warning: Multiplexing Logic Error(convu enabled)
+Time: 60 ns  Iteration: 0  Process: /mux_for_rams_tb/stimuli  File: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/mux_for_rams_tb.vhd
+Warning: Multiplexing Logic Error(comm enabled)
+Time: 100 ns  Iteration: 0  Process: /mux_for_rams_tb/stimuli  File: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/mux_for_rams_tb.vhd
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2729.547 ; gain = 80.387
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux_for_rams_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2729.547 ; gain = 80.387
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 3006.641 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/padding_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/padding_tb.vhd
+update_compile_order -fileset sim_1
+current_project filter_project
+current_project filter_project_with_uart
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+current_project filter_project
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/input_image.coe' provided. It will be converted relative to IP Instance files '../../../../filter_project_with_uart.srcs/sources_1/ip/input_output_ram/input_image.coe'
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/input_image.coe} CONFIG.Fill_Remaining_Memory_Locations {false}] [get_ips input_output_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/input_image.coe' provided. It will be converted relative to IP Instance files '../../../../../../../Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/input_image.coe'
+current_project filter_project_with_uart
+set_property top padding_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'padding_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj padding_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/sim/pad_conv_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pad_conv_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/sim/input_output_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_output_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj padding_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'padding'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/padding_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'padding_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xelab -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.padding [padding_default]
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.input_output_ram
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.pad_conv_ram
+Compiling architecture behavioral of entity xil_defaultlib.padding_tb
+Built simulation snapshot padding_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim/xsim.dir/padding_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim/xsim.dir/padding_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Sep 22 15:35:23 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 110.207 ; gain = 23.449
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 22 15:35:23 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 3006.641 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "padding_tb_behav -key {Behavioral:sim_1:Functional:padding_tb} -tclbatch {padding_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source padding_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3006.641 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'padding_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 3006.641 ; gain = 0.000
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+current_project filter_project
+current_project filter_project_with_uart
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 3509.953 ; gain = 0.066
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'padding_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj padding_tb_vlog.prj"
+"xvhdl --incr --relax -prj padding_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/padding_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'padding_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xelab -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.padding [padding_default]
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.input_output_ram
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.pad_conv_ram
+Compiling architecture behavioral of entity xil_defaultlib.padding_tb
+Built simulation snapshot padding_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "padding_tb_behav -key {Behavioral:sim_1:Functional:padding_tb} -tclbatch {padding_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source padding_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'padding_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 3509.953 ; gain = 0.000
+current_project filter_project
+current_project filter_project_with_uart
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'padding_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj padding_tb_vlog.prj"
+"xvhdl --incr --relax -prj padding_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/padding_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'padding_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xelab -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.padding [padding_default]
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.input_output_ram
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.pad_conv_ram
+Compiling architecture behavioral of entity xil_defaultlib.padding_tb
+Built simulation snapshot padding_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 3509.953 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'padding_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj padding_tb_vlog.prj"
+"xvhdl --incr --relax -prj padding_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3509.953 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xelab -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 3509.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {5000ns} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'padding_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj padding_tb_vlog.prj"
+"xvhdl --incr --relax -prj padding_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xelab -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "padding_tb_behav -key {Behavioral:sim_1:Functional:padding_tb} -tclbatch {padding_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source padding_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3509.953 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'padding_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3509.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'padding_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj padding_tb_vlog.prj"
+"xvhdl --incr --relax -prj padding_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xelab -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot padding_tb_behav xil_defaultlib.padding_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "padding_tb_behav -key {Behavioral:sim_1:Functional:padding_tb} -tclbatch {padding_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source padding_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module padding_tb.uut_3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'padding_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3509.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/convolve_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/convolve_tb.vhd
+update_compile_order -fileset sim_1
+current_project filter_project
+current_project filter_project_with_uart
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/control_unit_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/control_unit_tb.vhd
+update_compile_order -fileset sim_1
+set_property top control_unit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'control_unit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj control_unit_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/control_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/control_unit_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_unit_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+"xelab -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot control_unit_tb_behav xil_defaultlib.control_unit_tb -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b5e57a80f6d3429a9a9d416c8a490fbf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot control_unit_tb_behav xil_defaultlib.control_unit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit_tb
+Built simulation snapshot control_unit_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim/xsim.dir/control_unit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim/xsim.dir/control_unit_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Sep 22 17:02:50 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 92.430 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 22 17:02:50 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 3509.953 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "control_unit_tb_behav -key {Behavioral:sim_1:Functional:control_unit_tb} -tclbatch {control_unit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source control_unit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3509.953 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'control_unit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 3509.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 3509.953 ; gain = 0.000
+set_property top median_filter [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Sep 22 17:11:44 2020] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: median_filter
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3509.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'median_filter' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:47]
+INFO: [Synth 8-3491] module 'input_output_ram' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/synth/input_output_ram.vhd:59' bound to instance 'input_output_ram_1' of component 'input_output_ram' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:269]
+INFO: [Synth 8-638] synthesizing module 'input_output_ram' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/synth/input_output_ram.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: input_output_ram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 625 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 625 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 625 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 625 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.2049 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/synth/input_output_ram.vhd:234]
+INFO: [Synth 8-256] done synthesizing module 'input_output_ram' (9#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/synth/input_output_ram.vhd:69]
+INFO: [Synth 8-3491] module 'pad_conv_ram' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/synth/pad_conv_ram.vhd:59' bound to instance 'pad_conv_ram_1' of component 'pad_conv_ram' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'pad_conv_ram' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/synth/pad_conv_ram.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: pad_conv_ram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 729 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 729 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 729 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 729 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.4098 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/synth/pad_conv_ram.vhd:245]
+INFO: [Synth 8-256] done synthesizing module 'pad_conv_ram' (10#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/synth/pad_conv_ram.vhd:74]
+	Parameter addr_len bound to: 10 - type: integer 
+	Parameter data_size bound to: 8 - type: integer 
+	Parameter input_image_len bound to: 25 - type: integer 
+	Parameter output_image_len bound to: 27 - type: integer 
+INFO: [Synth 8-3491] module 'padding' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd:34' bound to instance 'padding_unit' of component 'padding' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:288]
+INFO: [Synth 8-638] synthesizing module 'padding' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd:57]
+	Parameter addr_len bound to: 10 - type: integer 
+	Parameter data_size bound to: 8 - type: integer 
+	Parameter base_value bound to: 0 - type: integer 
+	Parameter input_image_len bound to: 25 - type: integer 
+	Parameter output_image_len bound to: 27 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element input_value_reg was removed.  [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'padding' (11#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd:57]
+	Parameter addr_bit_size bound to: 9 - type: integer 
+	Parameter data_bit_size bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'convolve' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:34' bound to instance 'convolution_unit' of component 'convolve' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'convolve' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:50]
+	Parameter addr_bit_size bound to: 9 - type: integer 
+	Parameter data_bit_size bound to: 7 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element temp1_reg was removed.  [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:104]
+WARNING: [Synth 8-6014] Unused sequential element median_reg was removed.  [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:214]
+INFO: [Synth 8-256] done synthesizing module 'convolve' (12#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:50]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/control_unit.vhd:34' bound to instance 'control_unit_1' of component 'control_unit' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/control_unit.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (13#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/control_unit.vhd:56]
+	Parameter addr_length_g bound to: 10 - type: integer 
+	Parameter data_size_g bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mux_for_rams' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/mux_for_rams.vhd:34' bound to instance 'mux_for_rams_1' of component 'mux_for_rams' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'mux_for_rams' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/mux_for_rams.vhd:81]
+	Parameter addr_length_g bound to: 10 - type: integer 
+	Parameter data_size_g bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_for_rams' (14#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/mux_for_rams.vhd:81]
+	Parameter mem_addr_size_g bound to: 10 - type: integer 
+	Parameter pixel_data_size_g bound to: 8 - type: integer 
+	Parameter base_val bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'uart' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/uart.vhd:34' bound to instance 'uart_communication_unit' of component 'uart' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:357]
+INFO: [Synth 8-638] synthesizing module 'uart' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/uart.vhd:94]
+	Parameter mem_addr_size_g bound to: 10 - type: integer 
+	Parameter pixel_data_size_g bound to: 8 - type: integer 
+	Parameter base_val_g bound to: 0 - type: integer 
+WARNING: [Synth 8-3819] Generic 'base_val' not present in instantiated entity will be ignored [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:357]
+INFO: [Synth 8-256] done synthesizing module 'uart' (15#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/uart.vhd:94]
+INFO: [Synth 8-3491] module 'axi_uartlite_0' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/synth/axi_uartlite_0.vhd:59' bound to instance 'axi_uartlite_unit' of component 'axi_uartlite_0' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:386]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite_0' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/synth/axi_uartlite_0.vhd:86]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uartlite' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2128' bound to instance 'U0' of component 'axi_uartlite' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/synth/axi_uartlite_0.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uartlite_core' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'baudrate' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+	Parameter C_RATIO bound to: 651 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (16#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (17#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 5 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (18#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (19#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (20#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (21#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (22#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (23#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (24#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000001111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 4 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b00 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (25#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b01 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (25#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b10 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (25#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b11 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (25#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (26#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (27#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (28#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (29#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite_0' (30#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/synth/axi_uartlite_0.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'median_filter' (31#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:47]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[2]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[3]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Bus_RNW
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[31]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[30]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[29]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[28]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[27]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[26]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[25]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[24]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[23]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[22]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[21]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[20]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[19]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[18]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[17]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[16]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[15]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[14]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[13]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[12]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[11]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[10]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[9]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[8]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[7]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[6]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[5]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[4]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[3]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[2]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
+WARNING: [Synth 8-3331] design uartlite_core has unconnected port bus2ip_cs
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_bresp_in[1]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_bresp_in[0]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[31]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[30]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[29]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[28]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[27]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[26]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[25]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[24]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[23]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[22]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[21]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[20]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[19]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[18]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[17]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[16]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[15]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[14]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[13]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[12]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[11]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[10]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[9]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[8]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rresp_in[1]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rresp_in[0]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port RSTA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port RSTB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port ENA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port RSTB
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port REGCEB
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:08 ; elapsed = 00:01:08 . Memory (MB): peak = 3509.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 3509.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 3509.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 3509.953 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0_board.xdc] for cell 'axi_uartlite_unit/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0_board.xdc] for cell 'axi_uartlite_unit/U0'
+Parsing XDC File [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xdc] for cell 'axi_uartlite_unit/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xdc] for cell 'axi_uartlite_unit/U0'
+Parsing XDC File [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/constrs_1/new/basys3_constraints.xdc]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/constrs_1/new/basys3_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3583.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDR => FDRE: 6 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:23 ; elapsed = 00:01:16 . Memory (MB): peak = 3583.617 ; gain = 73.664
+77 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:17 . Memory (MB): peak = 3583.617 ; gain = 73.664
+close_design
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 22 17:58:38 2020...

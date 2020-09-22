@@ -1,0 +1,13 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/control_unit_tb.vhd,1600772474,vhdl,,,,control_unit_tb,,,,,,,,
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/mux_for_rams_tb.vhd,1600767765,vhdl,,,,mux_for_rams_tb,,,,,,,,
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sim_1/new/padding_tb.vhd,1600770292,vhdl,,,,padding_tb,,,,,,,,
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/sim/input_output_ram.v,1600710700,verilog,,,,input_output_ram,,,,,,,,
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/sim/pad_conv_ram.v,1600711196,verilog,,C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/sim/input_output_ram.v,,pad_conv_ram,,,,,,,,
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/control_unit.vhd,1600765604,vhdl,,,,control_unit,,,,,,,,
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/mux_for_rams.vhd,1600711932,vhdl,,,,mux_for_rams,,,,,,,,
+C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd,1600756371,vhdl,,,,padding,,,,,,,,

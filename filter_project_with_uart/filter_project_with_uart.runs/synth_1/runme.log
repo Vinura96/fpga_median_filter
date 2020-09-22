@@ -1,0 +1,1078 @@
+
+*** Running vivado
+    with args -log median_filter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source median_filter.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source median_filter.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 330.438 ; gain = 33.539
+Command: synth_design -top median_filter -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 48456 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 868.504 ; gain = 234.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'median_filter' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:47]
+INFO: [Synth 8-3491] module 'input_output_ram' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/synth/input_output_ram.vhd:59' bound to instance 'input_output_ram_1' of component 'input_output_ram' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:269]
+INFO: [Synth 8-638] synthesizing module 'input_output_ram' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/synth/input_output_ram.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: input_output_ram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 625 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 625 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 625 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 625 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.2049 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/synth/input_output_ram.vhd:234]
+INFO: [Synth 8-256] done synthesizing module 'input_output_ram' (9#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/input_output_ram/synth/input_output_ram.vhd:69]
+INFO: [Synth 8-3491] module 'pad_conv_ram' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/synth/pad_conv_ram.vhd:59' bound to instance 'pad_conv_ram_1' of component 'pad_conv_ram' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'pad_conv_ram' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/synth/pad_conv_ram.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: pad_conv_ram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 729 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 729 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 729 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 729 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.4098 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/synth/pad_conv_ram.vhd:245]
+INFO: [Synth 8-256] done synthesizing module 'pad_conv_ram' (10#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/pad_conv_ram/synth/pad_conv_ram.vhd:74]
+	Parameter addr_len bound to: 10 - type: integer 
+	Parameter data_size bound to: 8 - type: integer 
+	Parameter input_image_len bound to: 25 - type: integer 
+	Parameter output_image_len bound to: 27 - type: integer 
+INFO: [Synth 8-3491] module 'padding' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd:34' bound to instance 'padding_unit' of component 'padding' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:288]
+INFO: [Synth 8-638] synthesizing module 'padding' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd:57]
+	Parameter addr_len bound to: 10 - type: integer 
+	Parameter data_size bound to: 8 - type: integer 
+	Parameter base_value bound to: 0 - type: integer 
+	Parameter input_image_len bound to: 25 - type: integer 
+	Parameter output_image_len bound to: 27 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element input_value_reg was removed.  [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'padding' (11#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/padding.vhd:57]
+	Parameter addr_bit_size bound to: 9 - type: integer 
+	Parameter data_bit_size bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'convolve' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:34' bound to instance 'convolution_unit' of component 'convolve' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'convolve' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:50]
+	Parameter addr_bit_size bound to: 9 - type: integer 
+	Parameter data_bit_size bound to: 7 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element temp1_reg was removed.  [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:104]
+WARNING: [Synth 8-6014] Unused sequential element median_reg was removed.  [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:214]
+INFO: [Synth 8-256] done synthesizing module 'convolve' (12#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:50]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/control_unit.vhd:34' bound to instance 'control_unit_1' of component 'control_unit' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/control_unit.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (13#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/control_unit.vhd:56]
+	Parameter addr_length_g bound to: 10 - type: integer 
+	Parameter data_size_g bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mux_for_rams' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/mux_for_rams.vhd:34' bound to instance 'mux_for_rams_1' of component 'mux_for_rams' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'mux_for_rams' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/mux_for_rams.vhd:81]
+	Parameter addr_length_g bound to: 10 - type: integer 
+	Parameter data_size_g bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_for_rams' (14#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/mux_for_rams.vhd:81]
+	Parameter mem_addr_size_g bound to: 10 - type: integer 
+	Parameter pixel_data_size_g bound to: 8 - type: integer 
+	Parameter base_val bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'uart' declared at 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/uart.vhd:34' bound to instance 'uart_communication_unit' of component 'uart' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:357]
+INFO: [Synth 8-638] synthesizing module 'uart' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/uart.vhd:94]
+	Parameter mem_addr_size_g bound to: 10 - type: integer 
+	Parameter pixel_data_size_g bound to: 8 - type: integer 
+	Parameter base_val_g bound to: 0 - type: integer 
+WARNING: [Synth 8-3819] Generic 'base_val' not present in instantiated entity will be ignored [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:357]
+INFO: [Synth 8-256] done synthesizing module 'uart' (15#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/uart.vhd:94]
+INFO: [Synth 8-3491] module 'axi_uartlite_0' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/synth/axi_uartlite_0.vhd:59' bound to instance 'axi_uartlite_unit' of component 'axi_uartlite_0' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:386]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite_0' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/synth/axi_uartlite_0.vhd:86]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uartlite' declared at 'c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2128' bound to instance 'U0' of component 'axi_uartlite' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/synth/axi_uartlite_0.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uartlite_core' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'baudrate' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+	Parameter C_RATIO bound to: 651 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (16#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (17#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 5 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (18#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (19#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (20#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (21#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (22#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (23#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (24#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000001111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 4 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b00 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (25#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b01 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (25#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b10 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (25#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b11 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (25#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (26#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (27#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (28#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (29#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite_0' (30#1) [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/synth/axi_uartlite_0.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'median_filter' (31#1) [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/median_filter.vhd:47]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[2]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[3]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Bus_RNW
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[31]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[30]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[29]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[28]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[27]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[26]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[25]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[24]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[23]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[22]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[21]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[20]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[19]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[18]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[17]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[16]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[15]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[14]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[13]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[12]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[11]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[10]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[9]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[8]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[7]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[6]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[5]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[4]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[3]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[2]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
+WARNING: [Synth 8-3331] design uartlite_core has unconnected port bus2ip_cs
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_bresp_in[1]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_bresp_in[0]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[31]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[30]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[29]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[28]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[27]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[26]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[25]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[24]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[23]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[22]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[21]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[20]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[19]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[18]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[17]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[16]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[15]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[14]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[13]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[12]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[11]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[10]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[9]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rdata_in[8]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rresp_in[1]
+WARNING: [Synth 8-3331] design uart has unconnected port uart_s_axi_rresp_in[0]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized0 has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port RSTA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port RSTB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port ENA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port RSTB
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized0 has unconnected port REGCEB
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:58 ; elapsed = 00:02:02 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:00 ; elapsed = 00:02:04 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:00 ; elapsed = 00:02:04 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 1265.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0_board.xdc] for cell 'axi_uartlite_unit/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0_board.xdc] for cell 'axi_uartlite_unit/U0'
+Parsing XDC File [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xdc] for cell 'axi_uartlite_unit/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xdc] for cell 'axi_uartlite_unit/U0'
+Parsing XDC File [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/constrs_1/new/basys3_constraints.xdc]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/constrs_1/new/basys3_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/constrs_1/new/basys3_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/median_filter_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/median_filter_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/median_filter_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/median_filter_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1265.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDR => FDRE: 6 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 1265.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:23 ; elapsed = 00:02:28 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:23 ; elapsed = 00:02:28 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for axi_uartlite_unit/U0. (constraint file  C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/synth_1/dont_touch.xdc, line 16).
+Applied set_property DONT_TOUCH = true for axi_uartlite_unit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for pad_conv_ram_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for input_output_ram_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:23 ; elapsed = 00:02:28 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:246]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/convolve.vhd:91]
+INFO: [Synth 8-5545] ROM "read_addr_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p9" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'op_state_reg' in module 'control_unit'
+INFO: [Synth 8-5544] ROM "op_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'uart_s_axi_wvalid_out_reg' into 'uart_s_axi_awvalid_out_reg' [C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.srcs/sources_1/new/uart.vhd:219]
+INFO: [Synth 8-802] inferred FSM for state register 'comm_state_reg' in module 'uart'
+INFO: [Synth 8-5544] ROM "finished_op_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_wait" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fetch_wait" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                           000001 |                              000
+            data_receive |                           000010 |                              001
+                 padding |                           000100 |                              010
+              convolving |                           001000 |                              011
+            data_sending |                           010000 |                              100
+                finished |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'op_state_reg' using encoding 'one-hot' in module 'control_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000000001 |                             0000
+            set_ctrl_reg |                        000000010 |                             0001
+               receiving |                        000000100 |                             0100
+                 storing |                        000001000 |                             0101
+        incrementing_rec |                        000010000 |                             0111
+                fetching |                        000100000 |                             0010
+                 sending |                        001000000 |                             0011
+       incrementing_send |                        010000000 |                             0110
+                    done |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'comm_state_reg' using encoding 'one-hot' in module 'uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                             0010 |                               00
+                 sm_read |                             1000 |                               01
+                sm_write |                             0100 |                               10
+                 sm_resp |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:31 ; elapsed = 00:02:37 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 12    
+	   2 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 7     
+	                8 Bit    Registers := 18    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 76    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 4     
+	   9 Input     32 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 1     
+	  10 Input     11 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 2     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 7     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 255   
+	  10 Input      8 Bit        Muxes := 8     
+	   9 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 175   
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 18    
+	   7 Input      1 Bit        Muxes := 23    
+	   9 Input      1 Bit        Muxes := 25    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module padding 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 6     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   5 Input     10 Bit        Muxes := 2     
+	   3 Input     10 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module convolve 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 10    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 1     
+	  10 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 249   
+	  10 Input      8 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 39    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 3     
+Module control_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 18    
+Module mux_for_rams 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   9 Input     32 Bit        Muxes := 4     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   9 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 23    
+	   9 Input      1 Bit        Muxes := 25    
+Module baudrate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module cntr_incr_decr_addn_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module srl_fifo_rbu_f 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module uartlite_rx 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 85    
+Module uartlite_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module uartlite_core 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module pselect_f 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (convolution_unit/\write_en_pad_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (padding_unit/\ioi_wea_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uart_communication_unit/\uart_s_axi_wstrb_out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wstrb_out_reg[1]' (FDE) to 'uart_communication_unit/uart_s_axi_wstrb_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wstrb_out_reg[2]' (FDE) to 'uart_communication_unit/uart_s_axi_wstrb_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart_communication_unit/\uart_s_axi_wstrb_out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[8]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[9]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[10]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[11]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[12]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[13]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[14]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[15]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[16]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[17]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[18]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[19]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[20]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[21]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[22]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[23]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[24]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[25]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[26]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[27]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[28]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[29]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[30]' (FDE) to 'uart_communication_unit/uart_s_axi_wdata_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_wdata_out_reg[31]' (FDE) to 'uart_communication_unit/uart_s_axi_awaddr_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uart_communication_unit/uart_s_axi_awaddr_out_reg[0]' (FDE) to 'uart_communication_unit/uart_s_axi_awaddr_out_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart_communication_unit/\uart_s_axi_awaddr_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_uartlite_unit/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_uartlite_unit/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+INFO: [Synth 8-3332] Sequential element (UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_uartlite.
+INFO: [Synth 8-3332] Sequential element (UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_uartlite.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:26 ; elapsed = 00:03:33 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:45 ; elapsed = 00:03:53 . Memory (MB): peak = 1265.625 ; gain = 632.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:14 ; elapsed = 00:04:22 . Memory (MB): peak = 1401.879 ; gain = 768.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:16 ; elapsed = 00:04:23 . Memory (MB): peak = 1401.879 ; gain = 768.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:20 ; elapsed = 00:04:28 . Memory (MB): peak = 1403.555 ; gain = 770.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:20 ; elapsed = 00:04:28 . Memory (MB): peak = 1403.555 ; gain = 770.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:21 ; elapsed = 00:04:28 . Memory (MB): peak = 1403.555 ; gain = 770.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:21 ; elapsed = 00:04:29 . Memory (MB): peak = 1403.555 ; gain = 770.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:21 ; elapsed = 00:04:29 . Memory (MB): peak = 1403.555 ; gain = 770.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:21 ; elapsed = 00:04:29 . Memory (MB): peak = 1403.555 ; gain = 770.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_uartlite | UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_uartlite | UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg[15] | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                  | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[15] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |   182|
+|3     |LUT1       |    77|
+|4     |LUT2       |   269|
+|5     |LUT3       |   311|
+|6     |LUT4       |   289|
+|7     |LUT5       |   395|
+|8     |LUT6       |   626|
+|9     |MUXF7      |     8|
+|10    |RAMB18E1   |     1|
+|11    |RAMB18E1_1 |     1|
+|12    |SRL16E     |    18|
+|13    |FDCE       |   421|
+|14    |FDPE       |    12|
+|15    |FDR        |     4|
+|16    |FDRE       |   322|
+|17    |FDSE       |    18|
+|18    |IBUF       |     4|
+|19    |OBUF       |     6|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------------------------------+----------------------------------------------+------+
+|      |Instance                                                                    |Module                                        |Cells |
++------+----------------------------------------------------------------------------+----------------------------------------------+------+
+|1     |top                                                                         |                                              |  2965|
+|2     |  input_output_ram_1                                                        |input_output_ram                              |     1|
+|3     |    U0                                                                      |blk_mem_gen_v8_4_4                            |     1|
+|4     |      inst_blk_mem_gen                                                      |blk_mem_gen_v8_4_4_synth                      |     1|
+|5     |        \gnbram.gnativebmg.native_blk_mem_gen                               |blk_mem_gen_top                               |     1|
+|6     |          \valid.cstr                                                       |blk_mem_gen_generic_cstr                      |     1|
+|7     |            \ramloop[0].ram.r                                               |blk_mem_gen_prim_width                        |     1|
+|8     |              \prim_init.ram                                                |blk_mem_gen_prim_wrapper_init                 |     1|
+|9     |  pad_conv_ram_1                                                            |pad_conv_ram                                  |     1|
+|10    |    U0                                                                      |blk_mem_gen_v8_4_4__parameterized1            |     1|
+|11    |      inst_blk_mem_gen                                                      |blk_mem_gen_v8_4_4_synth__parameterized0      |     1|
+|12    |        \gnbram.gnativebmg.native_blk_mem_gen                               |blk_mem_gen_top__parameterized0               |     1|
+|13    |          \valid.cstr                                                       |blk_mem_gen_generic_cstr__parameterized0      |     1|
+|14    |            \ramloop[0].ram.r                                               |blk_mem_gen_prim_width__parameterized0        |     1|
+|15    |              \prim_init.ram                                                |blk_mem_gen_prim_wrapper_init__parameterized0 |     1|
+|16    |  axi_uartlite_unit                                                         |axi_uartlite_0                                |   252|
+|17    |    U0                                                                      |axi_uartlite                                  |   252|
+|18    |      AXI_LITE_IPIF_I                                                       |axi_lite_ipif                                 |    70|
+|19    |        I_SLAVE_ATTACHMENT                                                  |slave_attachment                              |    70|
+|20    |          I_DECODER                                                         |address_decoder                               |    42|
+|21    |            \MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f                                     |     1|
+|22    |            \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized1                     |     1|
+|23    |      UARTLITE_CORE_I                                                       |uartlite_core                                 |   182|
+|24    |        BAUD_RATE_I                                                         |baudrate                                      |    26|
+|25    |        UARTLITE_RX_I                                                       |uartlite_rx                                   |    93|
+|26    |          INPUT_DOUBLE_REGS3                                                |cdc_sync                                      |     8|
+|27    |          SRL_FIFO_I                                                        |srl_fifo_f_0                                  |    27|
+|28    |            I_SRL_FIFO_RBU_F                                                |srl_fifo_rbu_f_1                              |    27|
+|29    |              CNTR_INCR_DECR_ADDN_F_I                                       |cntr_incr_decr_addn_f_2                       |    16|
+|30    |              DYNSHREG_F_I                                                  |dynshreg_f_3                                  |     9|
+|31    |        UARTLITE_TX_I                                                       |uartlite_tx                                   |    54|
+|32    |          SRL_FIFO_I                                                        |srl_fifo_f                                    |    32|
+|33    |            I_SRL_FIFO_RBU_F                                                |srl_fifo_rbu_f                                |    32|
+|34    |              CNTR_INCR_DECR_ADDN_F_I                                       |cntr_incr_decr_addn_f                         |    18|
+|35    |              DYNSHREG_F_I                                                  |dynshreg_f                                    |    13|
+|36    |  control_unit_1                                                            |control_unit                                  |    70|
+|37    |  convolution_unit                                                          |convolve                                      |  1461|
+|38    |  padding_unit                                                              |padding                                       |   786|
+|39    |  uart_communication_unit                                                   |uart                                          |   376|
++------+----------------------------------------------------------------------------+----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:21 ; elapsed = 00:04:29 . Memory (MB): peak = 1403.555 ; gain = 770.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 335 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:10 ; elapsed = 00:04:17 . Memory (MB): peak = 1403.555 ; gain = 770.047
+Synthesis Optimization Complete : Time (s): cpu = 00:04:21 ; elapsed = 00:04:29 . Memory (MB): peak = 1403.555 ; gain = 770.047
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1403.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 196 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1403.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  FDR => FDRE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:35 ; elapsed = 00:04:45 . Memory (MB): peak = 1403.555 ; gain = 1043.316
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1403.555 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/Sem/filter_project_with_uart/filter_project_with_uart.runs/synth_1/median_filter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file median_filter_utilization_synth.rpt -pb median_filter_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 22 17:16:52 2020...
